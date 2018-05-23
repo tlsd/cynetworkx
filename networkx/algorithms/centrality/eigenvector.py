@@ -21,7 +21,7 @@ from networkx.utils import not_implemented_for
 __all__ = ['eigenvector_centrality', 'eigenvector_centrality_numpy']
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def eigenvector_centrality(G, max_iter=100, tol=1.0e-6, nstart=None,
                            weight=None):
     r"""Compute the eigenvector centrality for the graph `G`.

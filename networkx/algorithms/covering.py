@@ -15,8 +15,8 @@ from itertools import chain
 __all__ = ['min_edge_cover', 'is_edge_cover']
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def min_edge_cover(G, matching_algorithm=None):
     """Returns a set of edges which constitutes
     the minimum edge cover of the graph.
@@ -91,7 +91,7 @@ def min_edge_cover(G, matching_algorithm=None):
     return min_cover
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def is_edge_cover(G, cover):
     """Decides whether a set of edges is a valid edge cover of the graph.
 

@@ -13,8 +13,8 @@ from networkx.algorithms.covering import min_edge_cover as _min_edge_cover
 __all__ = ['min_edge_cover']
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def min_edge_cover(G, matching_algorithm=None):
     """Returns a set of edges which constitutes
     the minimum edge cover of the graph.

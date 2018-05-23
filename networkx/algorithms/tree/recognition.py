@@ -85,7 +85,7 @@ __author__ = """\n""".join([
 __all__ = ['is_arborescence', 'is_branching', 'is_forest', 'is_tree']
 
 
-@nx.utils.not_implemented_for('undirected')
+# @nx.utils.not_implemented_for('undirected')
 def is_arborescence(G):
     """
     Returns True if `G` is an arborescence.
@@ -114,7 +114,7 @@ def is_arborescence(G):
     return is_tree(G) and max(d for n, d in G.in_degree()) <= 1
 
 
-@nx.utils.not_implemented_for('undirected')
+# @nx.utils.not_implemented_for('undirected')
 def is_branching(G):
     """
     Returns True if `G` is a branching.

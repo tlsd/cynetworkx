@@ -96,7 +96,7 @@ def asyn_lpa_communities(G, weight=None):
     return iter(groups(labels).values())
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def label_propagation_communities(G):
     """Generates community sets determined by label propagation
 

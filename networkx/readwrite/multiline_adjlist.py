@@ -137,7 +137,7 @@ def generate_multiline_adjlist(G, delimiter=' '):
                 seen.add(s)
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_multiline_adjlist(G, path, delimiter=' ',
                             comments='#', encoding='utf-8'):
     """ Write the graph G in multiline adjacency list format to path
@@ -297,7 +297,7 @@ def parse_multiline_adjlist(lines, comments='#', delimiter=None,
     return G
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_multiline_adjlist(path, comments="#", delimiter=None,
                            create_using=None,
                            nodetype=None, edgetype=None,

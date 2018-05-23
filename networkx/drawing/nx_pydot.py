@@ -45,7 +45,7 @@ except NameError:
     unicode = str
 
 
-@open_file(1, mode='w')
+# @open_file(1, mode='w')
 def write_dot(G, path):
     """Write NetworkX graph G to Graphviz dot format on path.
 
@@ -56,7 +56,7 @@ def write_dot(G, path):
     return
 
 
-@open_file(0, mode='r')
+# @open_file(0, mode='r')
 def read_dot(path):
     """Return a NetworkX :class:`MultiGraph` or :class:`MultiDiGraph` from the
     dot file with the passed path.

@@ -27,7 +27,7 @@ import networkx as nx
 from networkx.utils import open_file
 
 
-@open_file(1, mode='w')
+# @open_file(1, mode='w')
 def write_yaml(G_to_be_yaml, path_for_yaml_output, **kwds):
     """Write graph G in YAML format to path. 
 
@@ -63,7 +63,7 @@ def write_yaml(G_to_be_yaml, path_for_yaml_output, **kwds):
     yaml.dump(G_to_be_yaml, path_for_yaml_output, **kwds)
 
 
-@open_file(0, mode='r')
+# @open_file(0, mode='r')
 def read_yaml(path):
     """Read graph in YAML format from path.
 

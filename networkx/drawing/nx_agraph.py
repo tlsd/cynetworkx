@@ -288,7 +288,7 @@ def pygraphviz_layout(G, prog='neato', root=None, args=''):
     return node_pos
 
 
-@nx.utils.open_file(5, 'w')
+# @nx.utils.open_file(5, 'w')
 def view_pygraphviz(G, edgelabel=None, prog='dot', args='',
                     suffix='', path=None):
     """Views the graph G using the specified layout algorithm.

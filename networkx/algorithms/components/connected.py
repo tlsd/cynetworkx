@@ -24,7 +24,7 @@ __all__ = [
 ]
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def connected_components(G):
     """Generate connected components.
 
@@ -75,7 +75,7 @@ def connected_components(G):
             seen.update(c)
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def connected_component_subgraphs(G, copy=True):
     """DEPRECATED: Use ``(G.subgraph(c) for c in connected_components(G))``
 
@@ -118,7 +118,7 @@ def number_connected_components(G):
     return sum(1 for cc in connected_components(G))
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def is_connected(G):
     """Return True if the graph is connected, False otherwise.
 
@@ -162,7 +162,7 @@ def is_connected(G):
     return sum(1 for node in _plain_bfs(G, arbitrary_element(G))) == len(G)
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def node_connected_component(G, n):
     """Return the set of nodes in the component of graph containing node n.
 

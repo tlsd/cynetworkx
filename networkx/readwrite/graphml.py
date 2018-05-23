@@ -69,7 +69,7 @@ __all__ = ['write_graphml', 'read_graphml', 'generate_graphml',
            'parse_graphml', 'GraphMLWriter', 'GraphMLReader']
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_graphml_xml(G, path, encoding='utf-8', prettyprint=True,
                       infer_numeric_types=False):
     """Write G in GraphML XML format to path
@@ -110,7 +110,7 @@ def write_graphml_xml(G, path, encoding='utf-8', prettyprint=True,
     writer.dump(path)
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_graphml_lxml(G, path, encoding='utf-8', prettyprint=True,
                        infer_numeric_types=False):
     """Write G in GraphML XML format to path
@@ -181,7 +181,7 @@ def generate_graphml(G, encoding='utf-8', prettyprint=True):
         yield line
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_graphml(path, node_type=str, edge_key_type=int):
     """Read graph in GraphML format from path.
 
@@ -335,7 +335,7 @@ class GraphML(object):
              (bool, "boolean")]
 
     xml_type = dict(types)
-    python_type = dict(reversed(a) for a in types)
+    python_type = dict({reversed(a) for a in types})
 
     # This page says that data types in GraphML follow Java(TM).
     #  http://graphml.graphdrawing.org/primer/graphml-primer.html#AttributesDefinition

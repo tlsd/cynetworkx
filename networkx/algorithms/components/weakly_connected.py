@@ -21,7 +21,7 @@ __all__ = [
 ]
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def weakly_connected_components(G):
     """Generate weakly connected components of G.
 
@@ -74,7 +74,7 @@ def weakly_connected_components(G):
             seen.update(c)
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def number_weakly_connected_components(G):
     """Return the number of weakly connected components in G.
 
@@ -107,7 +107,7 @@ def number_weakly_connected_components(G):
     return sum(1 for wcc in weakly_connected_components(G))
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def weakly_connected_component_subgraphs(G, copy=True):
     """DEPRECATED: Use ``(G.subgraph(c) for c in weakly_connected_components(G))``
 
@@ -123,7 +123,7 @@ def weakly_connected_component_subgraphs(G, copy=True):
             yield G.subgraph(c)
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def is_weakly_connected(G):
     """Test directed graph for weak connectivity.
 

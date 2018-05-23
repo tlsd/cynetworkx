@@ -52,7 +52,7 @@ def degree_centrality(G):
     return centrality
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def in_degree_centrality(G):
     """Compute the in-degree centrality for nodes.
 
@@ -93,7 +93,7 @@ def in_degree_centrality(G):
     return centrality
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def out_degree_centrality(G):
     """Compute the out-degree centrality for nodes.
 

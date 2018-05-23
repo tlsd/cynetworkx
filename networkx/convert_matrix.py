@@ -602,7 +602,7 @@ def from_numpy_matrix(A, parallel_edges=False, create_using=None):
     return G
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def to_numpy_recarray(G, nodelist=None, dtype=None, order=None):
     """Return the graph adjacency matrix as a NumPy recarray.
 

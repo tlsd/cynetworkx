@@ -50,7 +50,7 @@ def _tricode(G, v, u, w):
     return sum(x for u, v, x in combos if v in G[u])
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def triadic_census(G):
     """Determines the triadic census of a directed graph.
 

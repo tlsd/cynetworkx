@@ -25,7 +25,7 @@ except NameError:
     pass
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def network_simplex(G, demand='demand', capacity='capacity', weight='weight'):
     r"""Find a minimum cost flow satisfying all demands in digraph G.
 

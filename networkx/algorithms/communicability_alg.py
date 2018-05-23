@@ -18,8 +18,8 @@ __all__ = ['communicability',
            ]
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def communicability(G):
     r"""Return communicability between all pairs of nodes in G.
 
@@ -99,8 +99,8 @@ def communicability(G):
     return c
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def communicability_exp(G):
     r"""Return communicability between all pairs of nodes in G.
 

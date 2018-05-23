@@ -149,7 +149,7 @@ def inter_community_non_edges(G, partition):
     return inter_community_edges(nx.complement(G), partition)
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 @require_partition
 def performance(G, partition):
     """Returns the performance of a partition.

@@ -31,7 +31,7 @@ __all__ = ['configuration_model',
            ]
 
 
-@nodes_or_number([0, 1])
+# @nodes_or_number([0, 1])
 def complete_bipartite_graph(n1, n2, create_using=None):
     """Return the complete bipartite graph `K_{n_1,n_2}`.
 

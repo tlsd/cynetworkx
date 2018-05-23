@@ -12,8 +12,10 @@ Generators for the small graph atlas.
 """
 import gzip
 from itertools import islice
+import sys
 import os
 import os.path
+import inspect
 
 import networkx as nx
 
@@ -24,6 +26,9 @@ __all__ = ['graph_atlas', 'graph_atlas_g']
 #: The graphs are labeled starting from 0 and extending to (but not
 #: including) this number.
 NUM_GRAPHS = 1253
+
+if not hasattr(sys.modules[__name__], '__file__'):
+    __file__ = inspect.getfile(inspect.currentframe())
 
 #: The absolute path representing the directory containing this file.
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))

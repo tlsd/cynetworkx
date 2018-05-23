@@ -344,7 +344,7 @@ def is_aperiodic(G):
         return g == 1 and nx.is_aperiodic(G.subgraph(set(G) - set(levels)))
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def transitive_closure(G):
     """ Returns transitive closure of a directed graph
 
@@ -379,7 +379,7 @@ def transitive_closure(G):
     return TC
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def transitive_reduction(G):
     """ Returns transitive reduction of a directed graph
 
@@ -421,7 +421,7 @@ def transitive_reduction(G):
     return TR
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def antichains(G):
     """Generates antichains from a directed acyclic graph (DAG).
 
@@ -474,7 +474,7 @@ def antichains(G):
             antichains_stacks.append((new_antichain, new_stack))
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def dag_longest_path(G, weight='weight', default_weight=1):
     """Returns the longest path in a directed acyclic graph (DAG).
 
@@ -528,7 +528,7 @@ def dag_longest_path(G, weight='weight', default_weight=1):
     return path
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def dag_longest_path_length(G, weight='weight', default_weight=1):
     """Returns the longest path length in a DAG
 
@@ -583,8 +583,8 @@ def root_to_leaf_paths(G):
     return chaini(starmap(all_paths, product(roots, leaves)))
 
 
-@not_implemented_for('multigraph')
-@not_implemented_for('undirected')
+# @not_implemented_for('multigraph')
+# @not_implemented_for('undirected')
 def dag_to_branching(G):
     """Returns a branching representing all (overlapping) paths from
     root nodes to leaf nodes in the given directed acyclic graph.

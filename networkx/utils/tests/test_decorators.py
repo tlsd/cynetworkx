@@ -11,7 +11,7 @@ from networkx.utils.decorators import nodes_or_number, preserve_random_state, \
 
 
 def test_not_implemented_decorator():
-    @not_implemented_for('directed')
+    # @not_implemented_for('directed')
     def test1(G):
         pass
     test1(nx.Graph())
@@ -19,7 +19,7 @@ def test_not_implemented_decorator():
 
 @raises(KeyError)
 def test_not_implemented_decorator_key():
-    @not_implemented_for('foo')
+    # @not_implemented_for('foo')
     def test1(G):
         pass
     test1(nx.Graph())
@@ -27,7 +27,7 @@ def test_not_implemented_decorator_key():
 
 @raises(nx.NetworkXNotImplemented)
 def test_not_implemented_decorator_raise():
-    @not_implemented_for('graph')
+    # @not_implemented_for('graph')
     def test1(G):
         pass
     test1(nx.Graph())
@@ -43,20 +43,20 @@ class TestOpenFileDecorator(object):
         for text in self.text:
             path.write(text.encode('ascii'))
 
-    @open_file(1, 'r')
+    # @open_file(1, 'r')
     def read(self, path):
         return path.readlines()[0]
 
     @staticmethod
-    @open_file(0, 'wb')
+    # @open_file(0, 'wb')
     def writer_arg0(path):
         path.write('demo'.encode('ascii'))
 
-    @open_file(1, 'wb+')
+    # @open_file(1, 'wb+')
     def writer_arg1(self, path):
         self.write(path)
 
-    @open_file(2, 'wb')
+    # @open_file(2, 'wb')
     def writer_arg2default(self, x, path=None):
         if path is None:
             with tempfile.NamedTemporaryFile('wb+') as fh:
@@ -64,7 +64,7 @@ class TestOpenFileDecorator(object):
         else:
             self.write(path)
 
-    @open_file(4, 'wb')
+    # @open_file(4, 'wb')
     def writer_arg4default(self, x, y, other='hello', path=None, **kwargs):
         if path is None:
             with tempfile.NamedTemporaryFile('wb+') as fh:
@@ -72,7 +72,7 @@ class TestOpenFileDecorator(object):
         else:
             self.write(path)
 
-    @open_file('path', 'wb')
+    # @open_file('path', 'wb')
     def writer_kwarg(self, **kwargs):
         path = kwargs.get('path', None)
         if path is None:
@@ -152,7 +152,7 @@ class TestRandomState(object):
         except ImportError:
             raise SkipTest('NumPy not available.')
 
-    @random_state(1)
+    # @random_state(1)
     def instantiate_random_state(self, random_state):
         assert_true(isinstance(random_state, np.random.RandomState))
         return random_state
@@ -179,7 +179,7 @@ class TestRandomState(object):
 
 @raises(nx.NetworkXError)
 def test_string_arg_index():
-    @random_state('a')
+    # @random_state('a')
     def make_random_state(rs):
         pass
     rstate = make_random_state(1)
@@ -187,7 +187,7 @@ def test_string_arg_index():
 
 @raises(nx.NetworkXError)
 def test_invalid_arg_index():
-    @random_state(2)
+    # @random_state(2)
     def make_random_state(rs):
         pass
     rstate = make_random_state(1)

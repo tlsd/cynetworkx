@@ -38,7 +38,7 @@ from networkx.utils import open_file, make_str, not_implemented_for
 from networkx.convert import _prep_create_using
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_edgelist(G, path, comments="#", delimiter=' ', data=True,
                    encoding='utf-8'):
     """Write a bipartite graph as a list of edges.
@@ -89,7 +89,7 @@ def write_edgelist(G, path, comments="#", delimiter=' ', data=True,
         path.write(line.encode(encoding))
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def generate_edgelist(G, delimiter=' ', data=True):
     """Generate a single line of the bipartite graph G in edge list format.
 
@@ -278,7 +278,7 @@ def parse_edgelist(lines, comments='#', delimiter=None,
     return G
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_edgelist(path, comments="#",
                   delimiter=None, create_using=None,
                   nodetype=None, data=True, edgetype=None,

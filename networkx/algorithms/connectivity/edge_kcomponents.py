@@ -32,7 +32,7 @@ __all__ = [
 ]
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def k_edge_components(G, k):
     """Generates nodes in each maximal k-edge-connected component in G.
 
@@ -115,7 +115,7 @@ def k_edge_components(G, k):
             return aux_graph.k_edge_components(k)
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def k_edge_subgraphs(G, k):
     """Generates nodes in each maximal k-edge-connected subgraph in G.
 
@@ -202,8 +202,8 @@ def _k_edge_subgraphs_nodes(G, k):
         yield set(C.nodes())
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def bridge_components(G):
     """Finds all bridge-connected components G.
 
@@ -319,7 +319,7 @@ class EdgeComponentAuxGraph(object):
     [[1, 4], [2], [3]]
     """
 
-    # @not_implemented_for('multigraph')  # TODO: fix decor for classmethods
+    # # @not_implemented_for('multigraph')  # TODO: fix decor for classmethods
     @classmethod
     def construct(EdgeComponentAuxGraph, G):
         """Builds an auxiliary graph encoding edge-connectivity between nodes.

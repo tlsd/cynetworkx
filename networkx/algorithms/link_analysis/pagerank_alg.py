@@ -13,7 +13,7 @@ __author__ = """\n""".join(["Aric Hagberg <aric.hagberg@gmail.com>",
 __all__ = ['pagerank', 'pagerank_numpy', 'pagerank_scipy', 'google_matrix']
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def pagerank(G, alpha=0.85, personalization=None,
              max_iter=100, tol=1.0e-6, nstart=None, weight='weight',
              dangling=None):

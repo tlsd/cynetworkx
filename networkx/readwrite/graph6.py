@@ -192,7 +192,7 @@ def to_graph6_bytes(G, nodes=None, header=True):
     return b''.join(_generate_graph6_bytes(H, nodes, header))
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_graph6(path):
     """Read simple undirected graphs in graph6 format from path.
 
@@ -255,9 +255,9 @@ def read_graph6(path):
         return glist
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
-@open_file(1, mode='wb')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
+# @open_file(1, mode='wb')
 def write_graph6(G, path, nodes=None, header=True):
     """Write a simple undirected graph to a path in graph6 format.
 
@@ -316,8 +316,8 @@ def write_graph6(G, path, nodes=None, header=True):
     return write_graph6_file(G, path, nodes=nodes, header=header)
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def write_graph6_file(G, f, nodes=None, header=True):
     """Write a simple undirected graph to a file-like object in graph6 format.
 

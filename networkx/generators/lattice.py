@@ -46,7 +46,7 @@ __all__ = ['grid_2d_graph', 'grid_graph', 'hypercube_graph',
            'triangular_lattice_graph', 'hexagonal_lattice_graph']
 
 
-@nodes_or_number([0, 1])
+# @nodes_or_number([0, 1])
 def grid_2d_graph(m, n, periodic=False, create_using=None):
     """Returns the two-dimensional grid graph.
 

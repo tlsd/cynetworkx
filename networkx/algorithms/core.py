@@ -39,7 +39,7 @@ __all__ = ['core_number', 'find_cores', 'k_core',
            'k_shell', 'k_crust', 'k_corona']
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def core_number(G):
     """Return the core number for each vertex.
 

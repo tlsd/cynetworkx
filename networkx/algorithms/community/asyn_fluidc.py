@@ -15,7 +15,7 @@ from networkx.utils.decorators import not_implemented_for
 __all__ = ['asyn_fluidc']
 
 
-@not_implemented_for('directed', 'multigraph')
+# @not_implemented_for('directed', 'multigraph')
 def asyn_fluidc(G, k, max_iter=100):
     """Returns communities in `G` as detected by Fluid Communities algorithm.
 

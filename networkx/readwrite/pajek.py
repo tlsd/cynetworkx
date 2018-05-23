@@ -82,7 +82,7 @@ def generate_pajek(G):
         yield s
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_pajek(G, path, encoding='UTF-8'):
     """Write graph in Pajek format to path.
 
@@ -109,7 +109,7 @@ def write_pajek(G, path, encoding='UTF-8'):
         path.write(line.encode(encoding))
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_pajek(path, encoding='UTF-8'):
     """Read graph in Pajek format from path.
 

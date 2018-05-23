@@ -17,7 +17,7 @@ __author__ = '\n'.join(['Jordi Torrents <jtorrents@milnou.net>'])
 __all__ = ['k_components']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def k_components(G, flow_func=None):
     r"""Returns the k-component structure of a graph G.
 

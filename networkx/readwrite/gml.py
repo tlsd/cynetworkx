@@ -151,7 +151,7 @@ def literal_destringizer(rep):
         raise ValueError('%r is not a string' % (rep,))
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_gml(path, label='label', destringizer=None):
     """Read graph in GML format from `path`.
 
@@ -750,7 +750,7 @@ def generate_gml(G, stringizer=None):
     yield ']'
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_gml(G, path, stringizer=None):
     """Write a graph `G` in GML format to the file or file handle `path`.
 

@@ -13,8 +13,8 @@ import networkx as nx
 from networkx.utils import not_implemented_for
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def chain_decomposition(G, root=None):
     """Return the chain decomposition of a graph.
 

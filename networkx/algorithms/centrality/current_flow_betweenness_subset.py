@@ -17,7 +17,7 @@ __all__ = ['current_flow_betweenness_centrality_subset',
            'edge_current_flow_betweenness_centrality_subset']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def current_flow_betweenness_centrality_subset(G, sources, targets,
                                                normalized=True,
                                                weight=None,
@@ -133,7 +133,7 @@ def current_flow_betweenness_centrality_subset(G, sources, targets,
     return dict((ordering[k], v) for k, v in betweenness.items())
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def edge_current_flow_betweenness_centrality_subset(G, sources, targets,
                                                     normalized=True,
                                                     weight=None,

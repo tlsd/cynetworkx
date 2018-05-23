@@ -344,8 +344,8 @@ def strong_product(G, H):
     return GH
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def power(G, k):
     """Returns the specified power of a graph.
 
@@ -433,7 +433,7 @@ def power(G, k):
     return H
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def rooted_product(G, H, root):
     """ Return the rooted product of graphs G and H rooted at root in H.
 

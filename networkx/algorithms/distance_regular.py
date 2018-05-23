@@ -111,7 +111,7 @@ def global_parameters(b, c):
     return ((y, b[0] - x - y, x) for x, y in zip(b + [0], [0] + c))
 
 
-@not_implemented_for('directed', 'multigraph')
+# @not_implemented_for('directed', 'multigraph')
 def intersection_array(G):
     """Returns the intersection array of a distance-regular graph.
 
@@ -178,7 +178,7 @@ def intersection_array(G):
 
 
 # TODO There is a definition for directed strongly regular graphs.
-@not_implemented_for('directed', 'multigraph')
+# @not_implemented_for('directed', 'multigraph')
 def is_strongly_regular(G):
     """Returns True if and only if the given graph is strongly
     regular.

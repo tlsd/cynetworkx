@@ -258,7 +258,7 @@ def _all_simple_paths_multigraph(G, source, target, cutoff=None):
             visited.pop()
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def shortest_simple_paths(G, source, target, weight=None):
     """Generate all simple paths in the graph G from source to target,
        starting from shortest ones.

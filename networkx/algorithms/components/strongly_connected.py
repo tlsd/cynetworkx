@@ -24,7 +24,7 @@ __all__ = ['number_strongly_connected_components',
            'condensation']
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def strongly_connected_components(G):
     """Generate nodes in strongly connected components of graph.
 
@@ -121,7 +121,7 @@ def strongly_connected_components(G):
                         scc_queue.append(v)
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def kosaraju_strongly_connected_components(G, source=None):
     """Generate nodes in strongly connected components of graph.
 
@@ -179,7 +179,7 @@ def kosaraju_strongly_connected_components(G, source=None):
         seen.update(new)
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def strongly_connected_components_recursive(G):
     """Generate nodes in strongly connected components of graph.
 
@@ -266,7 +266,7 @@ def strongly_connected_components_recursive(G):
                 yield c
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def strongly_connected_component_subgraphs(G, copy=True):
     """DEPRECATED: Use ``(G.subgraph(c) for c in strongly_connected_components(G))``
 
@@ -282,7 +282,7 @@ def strongly_connected_component_subgraphs(G, copy=True):
             yield G.subgraph(c)
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def number_strongly_connected_components(G):
     """Return number of strongly connected components in graph.
 
@@ -314,7 +314,7 @@ def number_strongly_connected_components(G):
     return sum(1 for scc in strongly_connected_components(G))
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def is_strongly_connected(G):
     """Test directed graph for strong connectivity.
 
@@ -355,7 +355,7 @@ def is_strongly_connected(G):
     return len(list(strongly_connected_components(G))[0]) == len(G)
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def condensation(G, scc=None):
     """Returns the condensation of G.
 

@@ -19,7 +19,7 @@ from networkx.utils import not_implemented_for
 __all__ = ['astar_path', 'astar_path_length']
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def astar_path(G, source, target, heuristic=None, weight='weight'):
     """Return a list of nodes in a shortest path between source and target
     using the A* ("A-star") algorithm.

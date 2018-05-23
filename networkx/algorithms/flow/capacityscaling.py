@@ -46,7 +46,7 @@ def _detect_unboundedness(R):
             'Min cost flow may be unbounded below.')
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def _build_residual_network(G, demand, capacity, weight):
     """Build a residual network and initialize a zero flow.
     """

@@ -36,8 +36,8 @@ __all__ = [
 ]
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def is_k_edge_connected(G, k):
     """Tests to see if a graph is k-edge-connected.
 
@@ -86,8 +86,8 @@ def is_k_edge_connected(G, k):
             return nx.edge_connectivity(G, cutoff=k) >= k
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def is_locally_k_edge_connected(G, s, t, k):
     """Tests to see if an edge in a graph is locally k-edge-connected.
 
@@ -143,8 +143,8 @@ def is_locally_k_edge_connected(G, s, t, k):
             return localk >= k
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def k_edge_augmentation(G, k, avail=None, weight=None, partial=False):
     """Finds set of edges to k-edge-connect G.
 
@@ -394,8 +394,8 @@ def partial_k_edge_augmentation(G, k, avail, weight=None):
                 yield edge
 
 
-@not_implemented_for('multigraph')
-@not_implemented_for('directed')
+# @not_implemented_for('multigraph')
+# @not_implemented_for('directed')
 def one_edge_augmentation(G, avail=None, weight=None, partial=False):
     """Finds minimum weight set of edges to connect G.
 
@@ -447,8 +447,8 @@ def one_edge_augmentation(G, avail=None, weight=None, partial=False):
                                               partial=partial)
 
 
-@not_implemented_for('multigraph')
-@not_implemented_for('directed')
+# @not_implemented_for('multigraph')
+# @not_implemented_for('directed')
 def bridge_augmentation(G, avail=None, weight=None):
     """Finds the a set of edges that bridge connects G.
 
@@ -1168,8 +1168,8 @@ else:
         rng.shuffle(input)
 
 
-@not_implemented_for('multigraph')
-@not_implemented_for('directed')
+# @not_implemented_for('multigraph')
+# @not_implemented_for('directed')
 def greedy_k_edge_augmentation(G, k, avail=None, weight=None, seed=None):
     """Greedy algorithm for finding a k-edge-augmentation
 

@@ -24,7 +24,7 @@ __all__ = [
 ]
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def is_biconnected(G):
     """Return True if the graph is biconnected, False otherwise.
 
@@ -97,7 +97,7 @@ def is_biconnected(G):
 #    return len(bcc[0]) == len(G)
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def biconnected_component_edges(G):
     """Return a generator of lists of edges, one list for each biconnected
     component of the input graph.
@@ -170,7 +170,7 @@ def biconnected_component_edges(G):
         yield comp
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def biconnected_components(G):
     """Return a generator of sets of nodes, one set for each biconnected
     component of the graph
@@ -263,7 +263,7 @@ def biconnected_components(G):
         yield set(chain.from_iterable(comp))
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def biconnected_component_subgraphs(G, copy=True):
     """DEPRECATED: Use ``(G.subgraph(c) for c in biconnected_components(G))``
 
@@ -279,7 +279,7 @@ def biconnected_component_subgraphs(G, copy=True):
             yield G.subgraph(c)
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def articulation_points(G):
     """Yield the articulation points, or cut vertices, of a graph.
 
@@ -353,7 +353,7 @@ def articulation_points(G):
             yield articulation
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def _biconnected_dfs(G, components=True):
     # depth-first search algorithm to generate articulation points
     # and biconnected components

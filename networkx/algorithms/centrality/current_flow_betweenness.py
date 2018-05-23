@@ -18,7 +18,7 @@ __all__ = ['current_flow_betweenness_centrality',
            'edge_current_flow_betweenness_centrality']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def approximate_current_flow_betweenness_centrality(G, normalized=True,
                                                     weight=None,
                                                     dtype=float, solver='full',
@@ -135,7 +135,7 @@ def approximate_current_flow_betweenness_centrality(G, normalized=True,
     return dict((ordering[k], float(v * factor)) for k, v in betweenness.items())
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def current_flow_betweenness_centrality(G, normalized=True, weight=None,
                                         dtype=float, solver='full'):
     r"""Compute current-flow betweenness centrality for nodes.
@@ -239,7 +239,7 @@ def current_flow_betweenness_centrality(G, normalized=True, weight=None,
     return dict((ordering[k], v) for k, v in betweenness.items())
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def edge_current_flow_betweenness_centrality(G, normalized=True,
                                              weight=None,
                                              dtype=float, solver='full'):

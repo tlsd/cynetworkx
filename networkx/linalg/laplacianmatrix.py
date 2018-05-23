@@ -17,7 +17,7 @@ __all__ = ['laplacian_matrix',
            'directed_laplacian_matrix']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def laplacian_matrix(G, nodelist=None, weight='weight'):
     """Return the Laplacian matrix of G.
 
@@ -62,7 +62,7 @@ def laplacian_matrix(G, nodelist=None, weight='weight'):
     return D - A
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def normalized_laplacian_matrix(G, nodelist=None, weight='weight'):
     r"""Return the normalized Laplacian matrix of G.
 
@@ -134,8 +134,8 @@ def normalized_laplacian_matrix(G, nodelist=None, weight='weight'):
 # https://bitbucket.org/bedwards/networkx-community/src/370bd69fc02f/networkx/algorithms/community/
 
 
-@not_implemented_for('undirected')
-@not_implemented_for('multigraph')
+# @not_implemented_for('undirected')
+# @not_implemented_for('multigraph')
 def directed_laplacian_matrix(G, nodelist=None, weight='weight',
                               walk_type=None, alpha=0.95):
     r"""Return the directed Laplacian matrix of G.

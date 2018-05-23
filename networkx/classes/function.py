@@ -490,7 +490,7 @@ def restricted_view(G, nodes, edges):
     return nxg.SubGraph(G, h_nodes, h_edges)
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def reverse_view(digraph):
     """Provide a reverse view of the digraph with edges reversed.
 
@@ -896,7 +896,7 @@ def non_edges(graph):
                 yield (u, v)
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def common_neighbors(G, u, v):
     """Return the common neighbors of two nodes in a graph.
 

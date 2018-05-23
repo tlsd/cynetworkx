@@ -35,7 +35,7 @@ except ImportError:
 __all__ = ['write_gexf', 'read_gexf', 'relabel_gexf_graph', 'generate_gexf']
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_gexf(G, path, encoding='utf-8', prettyprint=True, version='1.2draft'):
     """Write G in GEXF format to path.
 
@@ -136,7 +136,7 @@ def generate_gexf(G, encoding='utf-8', prettyprint=True, version='1.2draft'):
         yield line
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_gexf(path, node_type=None, relabel=False, version='1.2draft'):
     """Read graph in GEXF format from path.
 
@@ -222,7 +222,7 @@ class GEXF(object):
             (unicode, "string")])
 
     xml_type = dict(types)
-    python_type = dict(reversed(a) for a in types)
+    python_type = dict({reversed(a) for a in types})
 
     # http://www.w3.org/TR/xmlschema-2/#boolean
     convert_bool = {

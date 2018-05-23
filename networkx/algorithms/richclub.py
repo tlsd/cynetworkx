@@ -18,8 +18,8 @@ from networkx.utils import not_implemented_for
 __all__ = ['rich_club_coefficient']
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def rich_club_coefficient(G, normalized=True, Q=100):
     r"""Returns the rich-club coefficient of the graph `G`.
 

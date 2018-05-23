@@ -25,7 +25,7 @@ __all__ = ['triangles', 'average_clustering', 'clustering', 'transitivity',
            'square_clustering', 'generalized_degree']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def triangles(G, nodes=None):
     """Compute the number of triangles.
 
@@ -68,7 +68,7 @@ def triangles(G, nodes=None):
     return {v: t // 2 for v, d, t, _ in _triangles_and_degree_iter(G, nodes)}
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def _triangles_and_degree_iter(G, nodes=None):
     """ Return an iterator of (node, degree, triangles, generalized degree).
 
@@ -89,7 +89,7 @@ def _triangles_and_degree_iter(G, nodes=None):
         yield (v, len(vs), ntriangles, gen_degree)
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def _weighted_triangles_and_degree_iter(G, nodes=None, weight='weight'):
     """ Return an iterator of (node, degree, weighted_triangles).
 
@@ -124,7 +124,7 @@ def _weighted_triangles_and_degree_iter(G, nodes=None, weight='weight'):
         yield (i, len(inbrs), 2 * weighted_triangles)
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def _directed_triangles_and_degree_iter(G, nodes=None):
     """ Return an iterator of
     (node, total_degree, reciprocal_degree, directed_triangles).
@@ -152,7 +152,7 @@ def _directed_triangles_and_degree_iter(G, nodes=None):
         yield (i, dtotal, dbidirectional, directed_triangles)
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def _directed_weighted_triangles_and_degree_iter(G, nodes=None, weight = 'weight'):
     """ Return an iterator of
     (node, total_degree, reciprocal_degree, directed_weighted_triangles).
@@ -474,7 +474,7 @@ def square_clustering(G, nodes=None):
     return clustering
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def generalized_degree(G, nodes=None):
     """ Compute the generalized degree for nodes.
 

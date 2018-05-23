@@ -42,6 +42,11 @@ import os
 import sys
 import time
 import datetime
+import inspect
+
+
+if not hasattr(sys.modules[__name__], '__file__'):
+    __file__ = inspect.getfile(inspect.currentframe())
 
 basedir = os.path.abspath(os.path.split(__file__)[0])
 

@@ -246,8 +246,8 @@ def _lg_undirected(G, selfloops=False, create_using=None):
     return L
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def inverse_line_graph(G):
     """ Returns the inverse line graph of graph G.
 

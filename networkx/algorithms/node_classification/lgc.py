@@ -24,7 +24,7 @@ from networkx.algorithms.node_classification.utils import (
 __all__ = ['local_and_global_consistency']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def local_and_global_consistency(G, alpha=0.99,
                                  max_iter=30,
                                  label_name='label'):

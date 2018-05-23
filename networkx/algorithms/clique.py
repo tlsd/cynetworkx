@@ -31,7 +31,7 @@ __all__ = ['find_cliques', 'find_cliques_recursive', 'make_max_clique_graph',
            'enumerate_all_cliques']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def enumerate_all_cliques(G):
     """Returns all cliques in an undirected graph.
 
@@ -99,7 +99,7 @@ def enumerate_all_cliques(G):
                                  islice(cnbrs, i + 1, None))))
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def find_cliques(G):
     """Returns all maximal cliques in an undirected graph.
 

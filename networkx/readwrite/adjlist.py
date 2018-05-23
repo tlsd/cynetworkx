@@ -91,7 +91,7 @@ def generate_adjlist(G, delimiter=' '):
         yield line[:-len(delimiter)]
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_adjlist(G, path, comments="#", delimiter=' ', encoding='utf-8'):
     """Write graph G in single-line adjacency-list format to path.
 
@@ -226,7 +226,7 @@ def parse_adjlist(lines, comments='#', delimiter=None,
     return G
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_adjlist(path, comments="#", delimiter=None, create_using=None,
                  nodetype=None, encoding='utf-8'):
     """Read graph in adjacency list format from path.

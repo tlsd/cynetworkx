@@ -25,7 +25,7 @@ from networkx.algorithms.node_classification.utils import (
 __all__ = ['harmonic_function']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def harmonic_function(G, max_iter=30, label_name='label'):
     """Node classification by Harmonic function
 

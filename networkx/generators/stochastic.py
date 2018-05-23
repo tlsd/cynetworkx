@@ -18,7 +18,7 @@ __author__ = "Aric Hagberg <aric.hagberg@gmail.com>"
 __all__ = ['stochastic_graph']
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def stochastic_graph(G, copy=True, weight='weight'):
     """Returns a right-stochastic representation of directed graph `G`.
 

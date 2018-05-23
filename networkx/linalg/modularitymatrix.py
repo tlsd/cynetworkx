@@ -16,8 +16,8 @@ __author__ = "\n".join(['Aric Hagberg <aric.hagberg@gmail.com>',
 __all__ = ['modularity_matrix', 'directed_modularity_matrix']
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def modularity_matrix(G, nodelist=None, weight=None):
     """Return the modularity matrix of G.
 
@@ -80,8 +80,8 @@ def modularity_matrix(G, nodelist=None, weight=None):
     return A - X
 
 
-@not_implemented_for('undirected')
-@not_implemented_for('multigraph')
+# @not_implemented_for('undirected')
+# @not_implemented_for('multigraph')
 def directed_modularity_matrix(G, nodelist=None, weight=None):
     """Return the directed modularity matrix of G.
 

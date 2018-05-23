@@ -19,7 +19,7 @@ __all__ = ['number_attracting_components',
            ]
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def attracting_components(G):
     """Generates the attracting components in `G`.
 
@@ -59,7 +59,7 @@ def attracting_components(G):
             yield scc[n]
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def number_attracting_components(G):
     """Returns the number of attracting components in `G`.
 
@@ -87,7 +87,7 @@ def number_attracting_components(G):
     return sum(1 for ac in attracting_components(G))
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def is_attracting_component(G):
     """Returns True if `G` consists of a single attracting component.
 
@@ -118,7 +118,7 @@ def is_attracting_component(G):
     return False
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def attracting_component_subgraphs(G, copy=True):
     """DEPRECATED: Use ``(G.subgraph(c) for c in attracting_components(G))``
 

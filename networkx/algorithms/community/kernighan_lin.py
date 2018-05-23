@@ -92,7 +92,7 @@ def _kernighan_lin_pass(G, A, B, weight):
     return gains
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def kernighan_lin_bisection(G, partition=None, max_iter=10, weight='weight'):
     """Partition a graph into two blocks using the Kernighan–Lin
     algorithm.

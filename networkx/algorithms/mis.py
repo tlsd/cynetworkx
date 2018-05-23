@@ -20,7 +20,7 @@ from networkx.utils import not_implemented_for
 __all__ = ['maximal_independent_set']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def maximal_independent_set(G, nodes=None):
     """Return a random maximal independent set guaranteed to contain
     a given set of nodes.

@@ -19,7 +19,7 @@ from networkx.utils import not_implemented_for
 __all__ = ['katz_centrality', 'katz_centrality_numpy']
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def katz_centrality(G, alpha=0.1, beta=1.0, max_iter=1000, tol=1.0e-6,
                     nstart=None, normalized=True, weight=None):
     r"""Compute the Katz centrality for the nodes of the graph G.
@@ -195,7 +195,7 @@ def katz_centrality(G, alpha=0.1, beta=1.0, max_iter=1000, tol=1.0e-6,
     raise nx.PowerIterationFailedConvergence(max_iter)
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def katz_centrality_numpy(G, alpha=0.1, beta=1.0, normalized=True,
                           weight=None):
     r"""Compute the Katz centrality for the graph G.

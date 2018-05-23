@@ -76,7 +76,7 @@ def _slow_edges(G, radius, p):
     return edges
 
 
-@nodes_or_number(0)
+# @nodes_or_number(0)
 def random_geometric_graph(n, radius, dim=2, pos=None, p=2):
     """Returns a random geometric graph in the unit cube of dimensions `dim`.
 
@@ -169,7 +169,7 @@ def random_geometric_graph(n, radius, dim=2, pos=None, p=2):
     return G
 
 
-@nodes_or_number(0)
+# @nodes_or_number(0)
 def soft_random_geometric_graph(n, radius, dim=2, pos=None, p=2, p_dist=None):
     """Returns a soft random geometric graph in the unit cube of dimensions `dim`.
 
@@ -303,7 +303,7 @@ def soft_random_geometric_graph(n, radius, dim=2, pos=None, p=2, p_dist=None):
     return G
 
 
-@nodes_or_number(0)
+# @nodes_or_number(0)
 def geographical_threshold_graph(n, theta, dim=2, pos=None,
                                  weight=None, metric=None, p_dist=None):
     r"""Returns a geographical threshold graph.
@@ -456,7 +456,7 @@ def geographical_threshold_graph(n, theta, dim=2, pos=None,
     return G
 
 
-@nodes_or_number(0)
+# @nodes_or_number(0)
 def waxman_graph(n, beta=0.4, alpha=0.1, L=None, domain=(0, 0, 1, 1),
                  metric=None):
     r"""Return a Waxman random graph.
@@ -641,7 +641,7 @@ def navigable_small_world_graph(n, p=1, q=1, r=2, dim=2, seed=None):
     return G
 
 
-@nodes_or_number(0)
+# @nodes_or_number(0)
 def thresholded_random_geometric_graph(n, radius, theta, dim=2, pos=None, weight=None, p=2):
     """Returns a thresholded random geometric graph in the unit cube of dimensions `dim`.
 

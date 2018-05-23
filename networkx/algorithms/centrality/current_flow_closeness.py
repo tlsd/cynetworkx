@@ -15,7 +15,7 @@ from networkx.algorithms.centrality.flow_matrix import *
 __all__ = ['current_flow_closeness_centrality', 'information_centrality']
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def current_flow_closeness_centrality(G, weight=None,
                                       dtype=float, solver='lu'):
     """Compute current-flow closeness centrality for nodes.

@@ -19,8 +19,8 @@ __author__ = 'ysitu <ysitu@users.noreply.github.com>'
 __all__ = ['stoer_wagner']
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def stoer_wagner(G, weight='weight', heap=BinaryHeap):
     """Returns the weighted minimum edge cut using the Stoer-Wagner algorithm.
 

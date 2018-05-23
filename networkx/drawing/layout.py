@@ -60,7 +60,7 @@ def _process_params(G, center, dim):
     return G, center
 
 
-@random_state(3)
+# @random_state(3)
 def random_layout(G, center=None, dim=2, random_state=None):
     """Position nodes uniformly at random in the unit square.
 
@@ -238,7 +238,7 @@ def shell_layout(G, nlist=None, scale=1, center=None, dim=2):
     return npos
 
 
-@random_state(10)
+# @random_state(10)
 def fruchterman_reingold_layout(G,
                                 k=None,
                                 pos=None,
@@ -368,7 +368,7 @@ def fruchterman_reingold_layout(G,
 spring_layout = fruchterman_reingold_layout
 
 
-@random_state(7)
+# @random_state(7)
 def _fruchterman_reingold(A, k=None, pos=None, fixed=None, iterations=50,
                           threshold=1e-4, dim=2, random_state=None):
     # Position nodes in adjacency matrix A using Fruchterman-Reingold
@@ -437,7 +437,7 @@ def _fruchterman_reingold(A, k=None, pos=None, fixed=None, iterations=50,
     return pos
 
 
-@random_state(7)
+# @random_state(7)
 def _sparse_fruchterman_reingold(A, k=None, pos=None, fixed=None,
                                  iterations=50, threshold=1e-4, dim=2,
                                  random_state=None):

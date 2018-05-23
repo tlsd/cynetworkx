@@ -29,8 +29,8 @@ __all__ = [
 ]
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def cycle_basis(G, root=None):
     """ Returns a list of cycles which form a basis for cycles of G.
 
@@ -106,7 +106,7 @@ def cycle_basis(G, root=None):
     return cycles
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def simple_cycles(G):
     """Find simple cycles (elementary circuits) of a directed graph.
 
@@ -225,7 +225,7 @@ def simple_cycles(G):
         sccs.extend(list(nx.strongly_connected_components(H)))
 
 
-@not_implemented_for('undirected')
+# @not_implemented_for('undirected')
 def recursive_simple_cycles(G):
     """Find simple cycles (elementary circuits) of a directed graph.
 
@@ -471,8 +471,8 @@ def find_cycle(G, source=None, orientation='original'):
     return cycle[i:]
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def minimum_cycle_basis(G, weight=None):
     """ Returns a minimum weight cycle basis for G
 

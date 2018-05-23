@@ -25,7 +25,7 @@ from networkx.exception import NetworkXError
 from networkx.utils import open_file, is_string_like
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_leda(path, encoding='UTF-8'):
     """Read graph in LEDA format from path.
 

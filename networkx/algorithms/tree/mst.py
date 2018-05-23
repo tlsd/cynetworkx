@@ -24,7 +24,7 @@ __all__ = [
 ]
 
 
-@not_implemented_for('multigraph')
+# @not_implemented_for('multigraph')
 def boruvka_mst_edges(G, minimum=True, weight='weight',
                       keys=False, data=True, ignore_nan=False):
     """Iterate over edges of a Borůvka's algorithm min/max spanning tree.
@@ -307,7 +307,7 @@ ALGORITHMS = {
 }
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def minimum_spanning_edges(G, algorithm='kruskal', weight='weight',
                            keys=True, data=True, ignore_nan=False):
     """Generate edges in a minimum spanning forest of an undirected
@@ -399,7 +399,7 @@ def minimum_spanning_edges(G, algorithm='kruskal', weight='weight',
                 ignore_nan=ignore_nan)
 
 
-@not_implemented_for('directed')
+# @not_implemented_for('directed')
 def maximum_spanning_edges(G, algorithm='kruskal', weight='weight',
                            keys=True, data=True, ignore_nan=False):
     """Generate edges in a maximum spanning forest of an undirected

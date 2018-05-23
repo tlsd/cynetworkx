@@ -252,7 +252,7 @@ def to_sparse6_bytes(G, nodes=None, header=True):
     return b''.join(_generate_sparse6_bytes(G, nodes, header))
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_sparse6(path):
     """Read an undirected graph in sparse6 format from path.
 
@@ -315,8 +315,8 @@ def read_sparse6(path):
         return glist
 
 
-@not_implemented_for('directed')
-@open_file(1, mode='wb')
+# @not_implemented_for('directed')
+# @open_file(1, mode='wb')
 def write_sparse6(G, path, nodes=None, header=True):
     """Write graph G to given path in sparse6 format.
 

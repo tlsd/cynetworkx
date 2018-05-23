@@ -38,7 +38,7 @@ def not_implemented_for(*graph_types):
     Notes
     -----
     Multiple types are joined logically with "and".
-    For "or" use multiple @not_implemented_for() lines.
+    For "or" use multiple # @not_implemented_for() lines.
 
     Examples
     --------
@@ -113,19 +113,19 @@ def open_file(path_arg, mode='r'):
     --------
     Decorate functions like this::
 
-       @open_file(0,'r')
+       # @open_file(0,'r')
        def read_function(pathname):
            pass
 
-       @open_file(1,'w')
+       # @open_file(1,'w')
        def write_function(G,pathname):
            pass
 
-       @open_file(1,'w')
+       # @open_file(1,'w')
        def write_function(G, pathname='graph.dot')
            pass
 
-       @open_file('path', 'w+')
+       # @open_file('path', 'w+')
        def another_function(arg, **kwargs):
            path = kwargs['path']
            pass
@@ -135,7 +135,7 @@ def open_file(path_arg, mode='r'):
     # function wants to accept a default of None (and then handle it).
     # Here is an example:
     #
-    # @open_file('path')
+    # # @open_file('path')
     # def some_function(arg1, arg2, path=None):
     #    if path is None:
     #        fobj = tempfile.NamedTemporaryFile(delete=False)
@@ -254,15 +254,15 @@ def nodes_or_number(which_args):
     --------
     Decorate functions like this::
 
-       @nodes_or_number(0)
+       # @nodes_or_number(0)
        def empty_graph(nodes):
            pass
 
-       @nodes_or_number([0,1])
+       # @nodes_or_number([0,1])
        def grid_2d_graph(m1, m2, periodic=False):
            pass
 
-       @nodes_or_number(1)
+       # @nodes_or_number(1)
        def full_rary_tree(r, n)
            # r is a number. n can be a number of a list of nodes
            pass
@@ -360,11 +360,11 @@ def random_state(random_state_index):
     --------
     Decorate functions like this::
 
-       @random_state(0)
+       # @random_state(0)
        def random_float(random_state=None):
            return random_state.rand()
 
-       @random_state(1)
+       # @random_state(1)
        def random_array(dims, random_state=1):
            return random_state.rand(*dims)
     """

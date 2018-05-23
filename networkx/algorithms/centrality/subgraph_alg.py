@@ -19,8 +19,8 @@ __all__ = ['subgraph_centrality_exp',
            ]
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def subgraph_centrality_exp(G):
     r"""Return the subgraph centrality for each node of G.
 
@@ -86,8 +86,8 @@ def subgraph_centrality_exp(G):
     return sc
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def subgraph_centrality(G):
     r"""Return subgraph centrality for each node in G.
 
@@ -161,8 +161,8 @@ def subgraph_centrality(G):
     return sc
 
 
-@not_implemented_for('directed')
-@not_implemented_for('multigraph')
+# @not_implemented_for('directed')
+# @not_implemented_for('multigraph')
 def communicability_betweenness_centrality(G, normalized=True):
     r"""Return subgraph communicability for all pairs of nodes in G.
 

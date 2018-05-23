@@ -128,7 +128,7 @@ def generate_edgelist(G, delimiter=' ', data=True):
             yield delimiter.join(map(make_str, e))
 
 
-@open_file(1, mode='wb')
+# @open_file(1, mode='wb')
 def write_edgelist(G, path, comments="#", delimiter=' ', data=True,
                    encoding='utf-8'):
     """Write graph as a list of edges.
@@ -305,7 +305,7 @@ def parse_edgelist(lines, comments='#', delimiter=None,
     return G
 
 
-@open_file(0, mode='rb')
+# @open_file(0, mode='rb')
 def read_edgelist(path, comments="#", delimiter=None, create_using=None,
                   nodetype=None, data=True, edgetype=None, encoding='utf-8'):
     """Read a graph from a list of edges.
