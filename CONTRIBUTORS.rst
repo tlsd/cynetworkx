@@ -6,14 +6,20 @@ and has been developed with the help of many others. Thanks to everyone who has
 improved NetworkX by contributing code, bug reports (and fixes), documentation,
 and input on design, features, and the future of NetworkX.
 
+cyNetworkX builds upon the foundation laid by NetworkX, and will continue to
+inherit its ongoing improvements. The cyNetworkX team graciously thanks the
+NetworkX authors and contributors for their fantastic work, without which,
+cyNetworkX would not exist.
+
 Contributions
 -------------
 
 This section aims to provide a list of people and projects that have
-contributed to ``networkx``. It is intended to be an *inclusive* list, and
-anyone who has contributed and wishes to make that contribution known is
-welcome to add an entry into this file.  Generally, no name should be added to
-this list without the approval of the person associated with that name.
+contributed to ``networkx`` and ``cynetworkx``. It is intended to be an
+*inclusive* list, and anyone who has contributed and wishes to make that
+contribution known is welcome to add an entry into this file.  Generally,
+no name should be added to this list without the approval of the person
+associated with that name.
 
 Creating a comprehensive list of contributors can be difficult, and the list
 within this file is almost certainly incomplete.  Contributors include
@@ -39,7 +45,13 @@ of the earlier versions of NetworkX can be found
 `here <https://github.com/networkx/networkx/blob/886e790437bcf30e9f58368829d483efef7a2acc/doc/source/reference/credits_old.rst>`_.
 
 
-Original Authors
+cyNetworkX Authors
+^^^^^^^^^^^^^^^^
+
+| Pattern, Inc.
+|
+
+Original NetworkX Authors
 ^^^^^^^^^^^^^^^^
 
 | Aric Hagberg
@@ -48,7 +60,7 @@ Original Authors
 |
 
 
-Contributors
+NetworkX Contributors
 ^^^^^^^^^^^^
 
 Optionally, add your desired name and include a few relevant links. The order

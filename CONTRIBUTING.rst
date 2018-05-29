@@ -3,17 +3,17 @@ Developer overview
 
 1. If you are a first-time contributor:
 
-   * Go to `https://github.com/networkx/networkx
-     <https://github.com/networkx/networkx>`_ and click the
+   * Go to `https://github.com/pattern-inc/cynetworkx
+     <https://github.com/pattern-inc/cynetworkx>`_ and click the
      "fork" button to create your own copy of the project.
 
    * Clone the project to your local computer::
 
-      git clone git@github.com:your-username/networkx.git
+      git clone git@github.com:your-username/cynetworkx.git
 
    * Add the upstream repository::
 
-      git remote add upstream git@github.com:networkx/networkx.git
+      git remote add upstream git@github.com:cynetworkx/networkx.git
 
    * Now, you have remote repositories named:
 
@@ -43,14 +43,6 @@ Developer overview
 
    * Go to GitHub. The new branch will show up with a green Pull Request
      button---click it.
-
-   * If you want, post on the `mailing list
-     <http://groups.google.com/group/networkx-discuss>`_ to explain your changes or
-     to ask for review.
-
-For a more detailed discussion, read these :doc:`detailed documents
-<gitwash/index>` on how to use Git with ``networkx``
-(`<https://networkx.github.io/documentation/latest/developer/gitwash/index.html>`_).
 
 4. Review process:
 
@@ -134,7 +126,7 @@ Stylistic Guidelines
    import scipy as sp
    import matplotlib as mpl
    import matplotlib.pyplot as plt
-   import networkx as nx
+   import cynetworkx as nx
 
    cimport numpy as cnp # in Cython code
 
@@ -153,10 +145,10 @@ When you think the pull request is ready to merge, change the title (using the
 Developer Notes
 ---------------
 
-For additional information about contributing to NetworkX, please see
+For additional information about contributing to cyNetworkX, please see
 the `Developer Notes <https://github.com/networkx/networkx/wiki>`_.
 
 Bugs
 ----
 
-Please `report bugs on GitHub <https://github.com/networkx/networkx/issues>`_.
+Please `report bugs on GitHub <https://github.com/pattern-inc/cynetworkx/issues>`_.

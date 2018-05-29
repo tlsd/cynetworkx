@@ -30,22 +30,22 @@ installed. If you do not, refer to the `Pip documentation
 Install the released version
 ----------------------------
 
-Install the current release of ``networkx`` with ``pip``::
+Install the current release of ``cynetworkx`` with ``pip``::
 
-    $ pip install networkx
+    $ pip install cynetworkx
 
 To upgrade to a newer release use the ``--upgrade`` flag::
 
-    $ pip install --upgrade networkx
+    $ pip install --upgrade cynetworkx
 
 If you do not have permission to install software systemwide, you can
 install into your user directory using the ``--user`` flag::
 
-    $ pip install --user networkx
+    $ pip install --user cynetworkx
 
-Alternatively, you can manually download ``networkx`` from
-`GitHub <https://github.com/networkx/networkx/releases>`_  or
-`PyPI <https://pypi.python.org/pypi/networkx>`_.
+Alternatively, you can manually download ``cynetworkx`` from
+`GitHub <https://github.com/pattern-inc/cynetworkx/releases>`_  or
+`PyPI <https://pypi.python.org/pypi/cynetworkx>`_.
 To install one of these versions, unpack it and run the following from the
 top-level source directory using the Terminal::
 
@@ -55,24 +55,24 @@ Install the development version
 -------------------------------
 
 If you have `Git <https://git-scm.com/>`_ installed on your system, it is also
-possible to install the development version of ``networkx``.
+possible to install the development version of ``cynetworkx``.
 
 Before installing the development version, you may need to uninstall the
-standard version of ``networkx`` using ``pip``::
+standard version of ``cynetworkx`` using ``pip``::
 
-    $ pip uninstall networkx
+    $ pip uninstall cynetworkx
 
 Then do::
 
-    $ git clone https://github.com/networkx/networkx.git
-    $ cd networkx
+    $ git clone https://github.com/pattern-inc/cynetworkx.git
+    $ cd cynetworkx
     $ pip install -e .
 
 The ``pip install -e .`` command allows you to follow the development branch as
 it changes by creating links in the right places and installing the command
 line scripts to the appropriate locations.
 
-Then, if you want to update ``networkx`` at any time, in the same directory do::
+Then, if you want to update ``cynetworkx`` at any time, in the same directory do::
 
     $ git pull
 
@@ -103,9 +103,9 @@ The following optional packages provide additional functionality.
 - `gdal <http://www.gdal.org/>`_ provides shapefile format reading and writing.
 - `lxml <http://lxml.de/>`_ used for GraphML XML format.
 
-To install ``networkx`` and all optional packages, do::
+To install ``cynetworkx`` and all optional packages, do::
 
-    $ pip install networkx[all]
+    $ pip install cynetworkx[all]
 
 To explicitly install all optional packages, do::
 
@@ -118,7 +118,7 @@ Or, install any optional package (e.g., ``numpy``) individually::
 Testing
 -------
 
-NetworkX uses the Python ``nose`` testing package.  If you don't already have
+cyNetworkX uses the Python ``nose`` testing package.  If you don't already have
 that package installed, follow the directions on the `nose homepage
 <https://nose.readthedocs.org/>`_.
 
@@ -127,7 +127,7 @@ Test a source distribution
 
 You can test the complete package from the unpacked source directory with::
 
-    nosetests networkx -v
+    nosetests cynetworkx -v
 
 Test an installed package
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -135,12 +135,12 @@ Test an installed package
 If you have a file-based (not a Python egg) installation you can test the
 installed package with::
 
-    >>> import networkx as nx
+    >>> import cynetworkx as nx
     >>> nx.test()
 
 or::
 
-    python -c "import networkx as nx; nx.test()"
+    python -c "import cynetworkx as nx; nx.test()"
 
 Testing for developers
 ^^^^^^^^^^^^^^^^^^^^^^

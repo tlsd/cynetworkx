@@ -1,6 +1,6 @@
 # AppVeyor.com is a Continuous Integration service to build and run tests under
 # Windows
-# https://ci.appveyor.com/project/networkx/networkx
+# https://ci.appveyor.com/project/pattern-inc/cynetworkx
 
 environment:
   global:
@@ -58,7 +58,7 @@ install:
 
   - "pip install nose"
 
-# Not a .NET project, we build networkx in the install step instead
+# Not a .NET project, we build cynetworkx in the install step instead
 build: false
 
 test_script:

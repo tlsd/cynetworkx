@@ -1,4 +1,4 @@
-How to make a new release of ``networkx``
+How to make a new release of ``cynetworkx``
 =========================================
 
 - Update the release notes:
@@ -22,13 +22,13 @@ How to make a new release of ``networkx``
 
   7. Update ``doc/news.rst``.
 
-- Toggle ``dev = True`` to ``dev = False`` in ``networkx/release.py``.
+- Toggle ``dev = True`` to ``dev = False`` in ``cynetworkx/release.py``.
 
 - Commit changes.
 
 - Add the version number as a tag in git::
 
-   git tag -s [-u <key-id>] networkx-<major>.<minor>
+   git tag -s [-u <key-id>] cynetworkx-<major>.<minor>
 
   (If you do not have a gpg key, use -m instead; it is important for
   Debian packaging that the tags are annotated)
@@ -38,44 +38,44 @@ How to make a new release of ``networkx``
    git push --tags upstream master
 
   (where ``upstream`` is the name of the
-   ``github.com:networkx/networkx`` repository.)
+   ``github.com:pattern-inc/cynetworkx`` repository.)
 
 - Review the github release page::
 
-  https://github.com/networkx/networkx/releases
+  https://github.com/pattern-inc/cynetworkx/releases
 
 - Publish on PyPi::
 
    git clean -fxd
    python setup.py sdist --formats=zip
-   twine upload -s dist/networkx*.zip
+   twine upload -s dist/cynetworkx*.zip
 
 - Update documentation on the web:
-  The documentation is kept in a separate repo: networkx/documentation
+  The documentation is kept in a separate repo: cynetworkx/documentation
 
-  - Wait for the NetworkX Travis Bot to deploy to GitHub Pages
+  - Wait for the cyNetworkX Travis Bot to deploy to GitHub Pages
   - Sync your branch with the remote repo: ``git pull``.
   - Copy the documentation built by Travis.
     Assuming you are at the top-level of the ``documentation`` repo::
 
-      cp -a latest networkx-<major>.<minor> 
-      git add networkx-<major>.<minor>
-      ln -sfn networkx-<major>.<minor> stable
+      cp -a latest cynetworkx-<major>.<minor>
+      git add cynetworkx-<major>.<minor>
+      ln -sfn cynetworkx-<major>.<minor> stable
       git commit -m "Add <major>.<minor> docs"
       # maybe squash all the Deploy GitHub Pages commits
       # git rebase -i HEAD~XX where XX is the number of commits back
       # check you didn't break anything
-      # diff -r latest networkx-<major>.<minor>
+      # diff -r latest cynetworkx-<major>.<minor>
       # you will then need to force the push so be careful!
       git push
 
  - Increase the version number
 
-  - Toggle ``dev = False`` to ``dev = True`` in ``networkx/release.py``.
-  - Update ``major`` and ``minor`` in ``networkx/release.py``.
+  - Toggle ``dev = False`` to ``dev = True`` in ``cynetworkx/release.py``.
+  - Update ``major`` and ``minor`` in ``cynetworkx/release.py``.
 
 - Update the web frontpage:
-  The webpage is kept in a separate repo: networkx/website
+  The webpage is kept in a separate repo: cynetworkx/website
 
   - Sync your branch with the remote repo: ``git pull``.
     If you try to ``make github`` when your branch is out of sync, it
@@ -85,6 +85,3 @@ How to make a new release of ``networkx``
   - Push your changes to the repo.
   - Deploy using ``make github``.
 
-- Post release notes on mailing list.
-
-  - networkx-discuss@googlegroups.com
