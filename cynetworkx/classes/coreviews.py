@@ -10,7 +10,10 @@
 #          Dan Schult(dschult@colgate.edu)
 """
 """
-from collections import Mapping
+try:
+    from collections.abc import Mapping
+except ImportError:
+    from collections import Mapping
 import cynetworkx as nx
 
 __all__ = ['AtlasView', 'AdjacencyView', 'MultiAdjacencyView',

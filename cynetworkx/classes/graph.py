@@ -20,8 +20,10 @@ For directed graphs see DiGraph and MultiDiGraph.
 from __future__ import division
 import warnings
 from copy import deepcopy
-from collections import Mapping
-
+try:
+    from collections.abc import Mapping
+except ImportError:
+    from collections import Mapping
 import cynetworkx as nx
 from cynetworkx.classes.coreviews import AtlasView, AdjacencyView
 from cynetworkx.classes.reportviews import NodeView, EdgeView, DegreeView

@@ -20,7 +20,14 @@ to the user to check for that.
 """
 
 from collections import defaultdict
-from fractions import gcd
+import fractions
+
+if 'gcd' in dir(fractions):
+  from fractions import gcd
+else:
+  from math import gcd
+
+
 from functools import partial
 from itertools import chain
 from itertools import product
